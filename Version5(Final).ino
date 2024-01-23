@@ -23,11 +23,11 @@ pinMode(13,INPUT);
   byte numDigits = 3;
   byte digitPins[] = {2, 3, 4};
   byte segmentPins[] = {6, 7, 8, 9, 10, 11, 12};
-  bool resistorsOnSegments = false; // 'false' means resistors are on digit pins
-  byte hardwareConfig = COMMON_CATHODE; // See README.md for options
-  bool updateWithDelays = false; // Default 'false' is Recommended
-  bool leadingZeros = false; // Use 'true' if you'd like to keep the leading zeros
-  bool disableDecPoint = true; // Use 'true' if your decimal point doesn't exist or isn't connected
+  bool resistorsOnSegments = false;
+  byte hardwareConfig = COMMON_CATHODE;
+  bool updateWithDelays = false;
+  bool leadingZeros = false;
+  bool disableDecPoint = true;
   
   sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments,
   updateWithDelays, leadingZeros, disableDecPoint);
@@ -100,3 +100,4 @@ else if (sensor >= 300){
 
 
 }
+// final Version M.J. JuFo 2024
